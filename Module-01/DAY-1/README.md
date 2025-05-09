@@ -1,4 +1,4 @@
-# Ex.No:1(A) CLASS & OBJECTS
+# EX.NO:1(A) CLASS & OBJECTS
 
 ## AIM:
 To create a class named 'Student' with String variable 'name' and String variable 'address'.
@@ -25,15 +25,28 @@ RegisterNumber:
 */
 ```
 
-## Sourcecode.java:
-
-
-
-
+```
+class Student
+{
+   String name;
+   String address;
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Student obj= new Student();        
+        obj.name="John";
+        obj.address="Chennai";
+        System.out.println(obj.name+" "+obj.address);
+    }
+}
+```
 
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/7b5ff157-0eae-4a94-89e9-e6766f4748d0)
 
 
 
