@@ -1,7 +1,7 @@
-# Ex.No:1(B) VARIABLES AND OPERATOR
+# EX.NO:1(B) VARIABLES AND OPERATOR
 
 ## AIM:
-To write a Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true. [Class name is ‘Demo’]
+To write a Java program to swap the values of the two variables by without using a third variable. After swapping the values should be PRINT.
 
 ## ALGORITHM :
 1.	Start the program.
@@ -11,9 +11,7 @@ To write a Java program to get values of variables 'a' and 'b' and then check if
 5.	Create a new instance of the 'Scanner' class named 'sc' to read user input
 6.	Read an integer 'a' from the user using the 'nextInt' method of 'sc'
 7.	Read another integer 'b' from the user using the 'nextInt' method of 'sc'
-8.	Check if 'a' is less than 50 or if 'a' is less than 'b'
-a)	If the condition is true, print "true" using the 'print' method of 'System.out'
-b)	If the condition is false, print "false" using the 'print' method of 'System.out'
+8.	swap the variables and a and b using arithmetic operations.
 9.	End
 
 
@@ -24,16 +22,30 @@ b)	If the condition is false, print "false" using the 'print' method of 'System.
  ```
 /*
 Program to implement a variable and operators using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
 
-## Sourcecode.java:
+```
+import java.util.Scanner;
+public class Demo
+{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+        scanner.close();
+    }
+}
 
-
-
-
+```
 
 
 
@@ -41,5 +53,7 @@ RegisterNumber:
 
 
 
+
+
 ## RESULT:
-Thus, the Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true is created successfully.
+Thus, the Java program to swap the values of the two variables by without using a third variable. After swapping the values should be PRINT is created successfully.
