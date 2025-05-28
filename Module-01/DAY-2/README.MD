@@ -51,7 +51,6 @@ public class Demo
 
 ## OUTPUT:
 
-"C:\Users\matha\OneDrive\Pictures\Screenshots\Screenshot 2025-05-28 084745.png"
 
 
 
