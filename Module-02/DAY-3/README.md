@@ -4,7 +4,7 @@
 To create a java program to Develop a Java Program to sort the elements of an array in descending order.
 
 ## ALGORITHM :
-1.	Start
+1.Start
 
 2.Input the size of the array (size) and the array elements from the user.
 
