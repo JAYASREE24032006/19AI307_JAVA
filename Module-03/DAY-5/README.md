@@ -16,22 +16,29 @@ To write a Java program that creates a StringBuilder object using a given string
  ```
 /*
 Program to implement a StringBuilder Object Reference in Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
-
-## Sourcecode.java:
-
-
-
-
+```
+public class Main
+ {
+    public static void main(String[] args)
+    {
+        String str1 = "Hello, Java World!";
+        StringBuilder sb = new StringBuilder(str1);
+        System.out.println("Contents of StringBuilder object: " + sb);
+    }
+}
+```
 
 
 
 ## OUTPUT:
 
-
+```
+Contents of StringBuilder object: Hello, Java World!
+```
 
 ## RESULT:
 Thus the  Java program successfully creates a StringBuilder object using the given string and stores the reference in the variable sb. The contents of the object are printed using the reference variable.
