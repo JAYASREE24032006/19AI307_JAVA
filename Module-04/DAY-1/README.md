@@ -20,20 +20,35 @@ To create a Java program using constructor to print the circumference of rectang
  ```
 /*
 Program to implement a Constructor using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
+```
+class circum {
+    int l = 5;
+    int w = 6;
 
-## Sourcecode.java:
+    // Constructor
+    circum() {
+        int circumference = 2 * (l + w);
+        System.out.println("Circumference of First Rectangle: " + circumference);
+        System.out.println("Circumference of Second Rectangle: " + circumference);
+    }
 
-
+    public static void main(String[] args) {
+        // Create object which invokes the constructor
+        circum sc = new circum();
+    }
+}
+```
 
 
 
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/84845cba-0fda-4901-b589-4faf0ff6f9ab)
 
 
 
