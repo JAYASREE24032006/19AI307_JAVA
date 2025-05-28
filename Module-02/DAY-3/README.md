@@ -1,23 +1,18 @@
 # Ex.No:2(C)    SINGLE ARRAY
 
 ## AIM:
-To create a java program to read 5 values and display the all 5 values from array using single dimensional array.
+To create a java program to Develop a Java Program to sort the elements of an array in descending order.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	2.	Import the `Scanner` class from the `java.util` package
-3.	Define a class named `ArrayExample`
-4.	Inside the `main` method:
--	a) Create a `Scanner` object called `scanner` to take user input
--	b) Declare an integer array `values` of size 5
--	c) Use a `for` loop to iterate from `i = 0` to `i < 5`:
--   d) Take input from the user and store it in `values[i]`
-5.	Print "Elements in Array are :"
-6.	Use another `for` loop to iterate from `i = 0` to `i < 5`:
--	a) Print each element in `values` followed by a space
-7.	Close the `scanner` to release resources
-8.	End
+1.	Start
 
+2.Input the size of the array (size) and the array elements from the user.
+
+3.Store the elements into an Integer[] array.
+
+4.Sort the array in descending order using Arrays.sort(array, Collections.reverseOrder()).
+
+5.Output the sorted array elements.
 
 
 
@@ -26,12 +21,35 @@ To create a java program to read 5 values and display the all 5 values from arra
  ```
 /*
 Program to implement a Single Array using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
 
-## Sourcecode.java:
+```
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+public class SortArrayDescending 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        int size = scanner.nextInt();
+        Integer[] array = new Integer[size];
+        for (int i = 0; i < size; i++)
+        {
+            array[i] = scanner.nextInt();
+        }
+        Arrays.sort(array, Collections.reverseOrder());
+        System.out.print("Result of a Sorted Array :");
+        for (int i = 0; i < size; i++) 
+        {
+            System.out.print(array[i] + " ");
+        }
+    }
+}
+```
 
 
 
@@ -40,10 +58,11 @@ RegisterNumber:
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/30064c7b-fd8c-46fa-ab5b-b60cd1b3cddd)
 
 
 
 ## RESULT:
-Thus, the Java program Thus the java program to read 5 values and display the all 5 values from array using single dimensional  was executed successfully.
+Thus, the Java program Thus the java program to sort the elements of an array in descending order array using single dimensional  was executed successfully.
 
 
