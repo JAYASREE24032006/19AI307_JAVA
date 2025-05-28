@@ -1,34 +1,61 @@
 # Ex.No:2(A)  STATIC METHOD
 
 ## AIM:
-To create a java program for calculate cube of a number using static method.
+To create a java Program to Reverse a Number Using static function.
 
 ## ALGORITHM :
-1.  Start : Begin the process of calculating the cube of a number.
-2.	Declare a variable to store input : Declare an integer variable n to hold the number whose cube will be calculated.
-3.	Create a Scanner object : Create a Scanner object (sc) to read the input from the user.
-4.	Read input from the user : Prompt the user to input an integer value. The input value is stored in the variable n.
-5.	Call the cubecal function : Call the function cubecal(n) which computes the cube of the number by performing n * n * n.
-6.	Store the result : Store the result of the cubecal function in an integer variable result.
-7.	Output the result :
-8.	Print the cube of the number using System.out.println("Cube is: " + result);.
-9.	End the program.
+1.Start
 
+2.Input an integer num from the user.
 
+3.Initialize reversed = 0.
+4.While num is not 0:
+
+5.Get the last digit using digit = num % 10
+
+6.Update reversed number: reversed = reversed * 10 + digit
+
+7.Remove the last digit from num using num = num / 10
+
+8.Output the reversed number.
+
+9.Stop
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Static method using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
 
-## Sourcecode.java:
+```
+import java.util.Scanner;
+public class NumberReverser
+{
+    public static int reverseNumber(int number)
+    {
+        int reversed = 0;
+        while (number != 0) 
+        {
+            int digit = number % 10;
+            reversed = reversed * 10 + digit;
+            number /= 10;
+        }
+        return reversed;
+    }
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        int reversedNum = reverseNumber(num);
+        System.out.println("Reversed number: " + reversedNum);
+    }
+}
 
-
+```
 
 
 
@@ -36,8 +63,9 @@ RegisterNumber:
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/73c51510-683d-4f1b-8c78-963940299c92)
 
 
 ## RESULT:
-Thus the java program for calculate cube of a number using static method has been executed successfully.
+Thus the java program to Reverse a Number Using static function has been executed successfully.
 
