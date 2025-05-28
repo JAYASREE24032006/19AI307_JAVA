@@ -51,6 +51,16 @@ public class Demo
 
 ## OUTPUT:
 
+```
+6
+8
+Expected:
+Before swapping: a = 6, b = 8
+After swapping: a = 8, b = 6
+Got:
+Before swapping: a = 6, b = 8
+After swapping: a = 8, b = 6
+```
 
 
 
