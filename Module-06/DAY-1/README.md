@@ -23,20 +23,43 @@ To create a Java Program to implement Method Local Inner Class.
  ```
 /*
 Program to implement a Inner Class using Java
-Developed by: 
-RegisterNumber:  
+Developed by: jayasree R
+RegisterNumber:  212223040074
 */
 ```
+```
+public class MethodLocal 
+{
+    String outerValue = "Outer Class Variable";
+    public void display() 
+    {
+        String innerValue = "Inner Class Variable";
+        class Inner
+        {
+            public void print() 
+            {
+                System.out.println(outerValue);
+                System.out.println(innerValue);
+            }
+        }
+        Inner inner = new Inner();
+        inner.print();
+    }
+    public static void main(String[] args) 
+    {
+        MethodLocal methodLocal = new MethodLocal();
+        methodLocal.display();
+    }
+}
 
-## Sourcecode.java:
-
-
+```
 
 
 
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/ffb5f558-b19d-4ed4-973a-d5c46b55bc41)
 
 
 
