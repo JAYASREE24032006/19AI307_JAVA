@@ -27,22 +27,58 @@ To Create a Java program to implement super keyword in constructor.
  ```
 /*
 Program to implement a Constructor Chaining using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
+```
+// College.java
+class College {
+    College() {
+        System.out.println("College Constructor Called");
+    }
 
-## Sourcecode.java:
+    void display() {
+        System.out.println("I am a Vehicle");
+    }
+}
 
+// Student.java
+class Student extends College {
+    Student() {
+        super(); // Calls the constructor of College
+        System.out.println("Student Constructor Called");
+    }
 
+    void display() {
+        System.out.println("I am a Car");
+    }
 
+    void print() {
+        super.display(); // Calls display() from College
+        this.display();  // Calls display() from Student
+    }
+}
+
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        Student sc = new Student();
+        sc.print();
+    }
+}
+```
 
 
 
 
 ## OUTPUT:
-
-
+```
+College Constructor Called
+Student Constructor Called
+I am a Vehicle
+I am a Car
+```
 
 ## RESULT:
 Thus the java program for constructor chaining was executed successfully.
