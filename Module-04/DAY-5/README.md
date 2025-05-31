@@ -26,21 +26,57 @@ To write a parameterized constructor in the Employee class that initializes name
  ```
 /*
 Program to implement a Parameterized Constructor Using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R 
+RegisterNumber:  212223040074
 */
 ```
+```
+// Employee.java
+class Employee {
+    String name;
+    String designation;
 
-## Sourcecode.java:
+    // Parameterized constructor
+    Employee(String name, String designation) {
+        this.name = name;
+        this.designation = designation;
+    }
 
+    // Getter for name
+    String getName() {
+        return name;
+    }
 
+    // Getter for designation
+    String getDesg() {
+        return designation;
+    }
+}
 
+// Sample.java
+public class Sample {
+    public static void main(String[] args) {
+        // Creating object using parameterized constructor
+        Employee emp = new Employee("John", "Asst.Manager");
 
+        // Calling getter methods and storing the values
+        String empName = emp.getName();
+        String empDesg = emp.getDesg();
 
+        // Printing the values
+        System.out.println("Employee Name: " + empName);
+        System.out.println("Designation: " + empDesg);
+    }
+}
+```
 
 
 ## OUTPUT:
+```
+Employee Name: John
+Designation: Asst.Manager
 
+```
 
 
 ## RESULT:
