@@ -19,21 +19,54 @@ To Create a List interface implemented by arraylist class , adding n elements to
  ```
 /*
 Program to implement a JAVA LIST INTERFACE using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
 
-## Sourcecode.java:
+```
+import java.util.*;
 
 
+public class GFG {
 
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		
+        int size=sc.nextInt();
+        List<String> arr = new ArrayList<String>();
+  
+        boolean ans = arr.isEmpty();
+        if (ans == true)
+            System.out.println("The List is empty");
+        else
+            System.out.println("The List is not empty");
+  
+      
+        for(int i=0;i<size;i++)
+        {
+				arr.add(sc.next());
+        }
+        
+        
+        ans = arr.isEmpty();
+        if (ans == true)
+            System.out.println("The List is empty");
+        else
+            System.out.println("The List is not empty");
+        
 
-
+		
+	
+	}
+}
+```
 
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/043289b6-5e6f-4c41-9761-e7422dcb8b1c)
 
 
 ## RESULT:
