@@ -26,6 +26,7 @@ RegisterNumber:  212223040074
 */
 
 ```
+```
 import java.util.*;
 
 public class Main {
@@ -50,7 +51,7 @@ public class Main {
 
 
 ## OUTPUT:
-
+![image](https://github.com/user-attachments/assets/b3c49817-6e37-40fe-b6f6-3eb81fc56845)
 
 
 ## RESULT:
