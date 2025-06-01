@@ -19,12 +19,29 @@
  ```
 /*
 Program to implement a Buffer Input/Output Stream using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber: 212223040074 
 */
 ```
+```
+try {
+            // Open the file sample.txt
+            FileInputStream fileInput = new FileInputStream("sample.txt");
+            BufferedInputStream bufferedInput = new BufferedInputStream(fileInput);
 
-## Sourcecode.java:
+            int i;
+            System.out.println("Data in the File:");
+            while ((i = bufferedInput.read()) != -1) {
+                System.out.print((char) i);
+            }
+
+            // Close streams
+            bufferedInput.close();
+            fileInput.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
+```
 
 
 
@@ -33,6 +50,8 @@ RegisterNumber:
 
 
 ## OUTPUT:
+
+![image](https://github.com/user-attachments/assets/2c58327f-7727-4615-980f-0d5b08d58f63)
 
 
 
