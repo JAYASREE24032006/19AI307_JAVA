@@ -16,21 +16,49 @@
  ```
 /*
 Program to implement a String Reader using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:212223040074
 */
 ```
+```
+import java.io.*;
+public class StringSkipExample
+{
+    public static void main(String[] args) 
+    {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        try 
+        {
+            String inputString = reader.readLine();
+            int a = Integer.parseInt(reader.readLine());
+            StringReader stringReader = new StringReader(inputString);
+            stringReader.skip(a);
+            StringBuffer result = new StringBuffer();
+            int character;
+            while ((character = stringReader.read()) != -1) 
+            {
+                result.append((char) character);
+            }
+            System.out.println("Original data: " + inputString);
+            System.out.println("Data after skipping "+a+" characters:");
+            System.out.println(result.toString());
+            stringReader.close();
+        } 
+        catch (IOException e) 
+        {
+            System.out.println("Error reading input: " + e.getMessage());
+        }
+    }
+}
 
-## Sourcecode.java:
-
-
-
+```
 
 
 
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/9ca3cd24-0f66-480b-b721-1d3bc35a3134)
 
 
 ## RESULT:
