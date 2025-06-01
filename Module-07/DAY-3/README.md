@@ -25,14 +25,43 @@
  ```
 /*
 Program to implement a Thread concepts using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
-
-## Sourcecode.java:
-
-
+```
+import java.util.*;
+    public class Multi implements Runnable
+    {  
+        Scanner sc=new Scanner(System.in);
+        
+    public void run()
+    {  
+        int number=sc.nextInt();
+        int remainder=0,reverse=0,temp;
+        temp=number;
+       while(number != 0)   
+        {  
+         remainder = number % 10;  
+        reverse = reverse * 10 + remainder;  
+        number = number/10;  
+        }  
+        if(temp==reverse)
+        {
+        System.out.println("The number " +temp+" is Palindrome");  
+        }
+        else
+        {
+              System.out.println("The number " +temp+" is not a Palindrome");  
+        }
+    }  
+    public static void main(String args[]){  
+    Multi m1=new Multi(); 
+    Thread t1 =new Thread(m1); 
+    t1.run();  
+     }  
+    }
+```
 
 
 
@@ -40,6 +69,8 @@ RegisterNumber:
 
 ## OUTPUT:
 
+
+![image](https://github.com/user-attachments/assets/75c819e1-37e6-41ff-a30b-29effc9504dc)
 
 
 ## RESULT:
