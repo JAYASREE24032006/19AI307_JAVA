@@ -24,15 +24,38 @@
  ```
 /*
 Program to implement a Exception Handling-Run Time Exception using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber: 212223040074 
 */
 ```
 
-## Sourcecode.java:
+```
+import java.util.*;
+class Exception2 
+{
+   public static void main(String args[])
+   {
+     Scanner sc=new Scanner(System.in);
+      try {
+         int a[]=new int[5];
+       
+         int n=sc.nextInt();
+          System.out.println("Valid Statement :" +a[n]);
+         // another try block
+         try {
+                 int res = 100/ n;
+         }
+         catch (ArithmeticException ex2) {
+            System.out.println("Sorry! Division by zero isn't feasible!");
+         }
+      }
+      catch (ArrayIndexOutOfBoundsException ex1) {
+         System.out.println("ArrayIndexOutOfBoundsException");
+      }
+   }
+}
 
-
-
+```
 
 
 
@@ -40,6 +63,7 @@ RegisterNumber:
 ## OUTPUT:
 
 
+![image](https://github.com/user-attachments/assets/92c8ba51-8a70-40bb-bc9f-d7c2571a8ba6)
 
 ## RESULT:
 Thus the Java Program for handling Arithmetic Exception (division by zero exception) using Exception Handling Mechanism was executed successfully.
