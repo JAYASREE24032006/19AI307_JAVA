@@ -1,6 +1,6 @@
 # Ex.No:10(A)         JAVA COLLECTION FRAMEWORK –ARRAY LIST
 ## AIM:
- To Create a Java Program to store n numbers (add elements of type Integer) and then display the n numbers using array List.
+ To Create a arraylist and add odd numbers from 30 to 11 and then display the result in sorting order.
 
 ## ALGORITHM:
 1.	Start the Program
@@ -19,20 +19,38 @@
  ```
 /*
 Program to implement a ARRAY LIST using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
 
-## Sourcecode.java:
-
-
-
-
+```
+import java.util.*;  
+public class Main 
+{
+  public static void main(String[] args)
+  {
+    ArrayList<Integer> arraylist = new ArrayList<Integer>();
+    arraylist.add(29);
+    arraylist.add(27);
+    arraylist.add(25);
+    arraylist.add(23);
+    arraylist.add(21);
+    arraylist.add(19);
+    arraylist.add(17);
+    arraylist.add(15);
+    arraylist.add(13);
+    arraylist.add(11);
+    Collections.sort(arraylist);
+    System.out.println(arraylist);
+   }
+}
+```
 
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/63903dc2-27af-4a8b-9203-e5606312a250)
 
 
 
