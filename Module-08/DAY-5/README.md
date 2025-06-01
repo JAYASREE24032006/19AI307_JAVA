@@ -53,5 +53,5 @@ public class demo
 
 
 ## RESULT:
-Thus, the java program uses InputStreamReader to read input and handles loop termination based on the presence of # at the end of the input string, as specified. 
+Thus, the java program uses InputStreamReader to read input and display it.
 
