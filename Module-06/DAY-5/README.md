@@ -24,20 +24,61 @@ b.	Call the methods to get input and display results.
  ```
 /*
 Program to implement a Multiple Inheritance
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
+```
+class Student
+{
+    Student()
+    {
+        System.out.println("Student Class");
+    }
+}
 
-## Sourcecode.java:
+class Marks extends Student
+{
+    Marks()
+    {
+        System.out.println("Marks Class");
+    }
+}
+
+class Total extends Marks
+{
+    Total()
+    {
+        System.out.println("Total Class");
+    }
+}
+
+class Average extends Total
+{
+    Average()
+    {
+        System.out.println("Average Class");
+    }
+}
 
 
+public class Main
+{
+    public static void main(String args[])
+    {
+        Average obj = new Average();
+        
+        
+    }
+}
+```
 
 
 
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/f35d024a-a581-46e1-8d00-38a313ab9f2d)
 
 
 
