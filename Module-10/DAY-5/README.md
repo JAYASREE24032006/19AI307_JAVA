@@ -15,21 +15,40 @@ e.	Use .size() method to get and print the number of elements in the set.
  ```
 /*
 Program to implement a LINKEDHASH SET
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
+```
+import java.util.*;
 
-## Sourcecode.java:
+public class HashSetDemo{
 
+public static void main(String args[]){
 
+LinkedHashSet <String> hs = new LinkedHashSet <String>();
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+for(int i=0;i<n;i++)
+{
+    
+hs.add(sc.next());
 
+}
 
+System.out.println("LinkedHashSet: " + hs);  
+System.out.println("The size of the set is: " + hs.size());  
+}
+}
+```
 
 
 
 ## OUTPUT:
 
+
+
+![image](https://github.com/user-attachments/assets/bd6868ea-0e54-4880-bd6d-32fb7c5de6d0)
 
 
 ## RESULT:
