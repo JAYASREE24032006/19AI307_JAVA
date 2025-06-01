@@ -1,6 +1,6 @@
 # Ex.No:8(A)           IO-FILE STREAM
 ## AIM:
-To implement a Java Program to write a String in a file "testout.txt" using FileOutputStream
+To implement a Java Program to write a byte in a file "testout.txt" using FileOutputStream
 
 ## ALGORITHM :
 1.  Define the string "Welcome to Saveetha" and convert it to a byte array b using getBytes().
@@ -15,21 +15,32 @@ To implement a Java Program to write a String in a file "testout.txt" using File
  ```
 /*
 Program to implement a IO File Stream using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
+```
+try
+{
+    FileOutputStream fout=new FileOutputStream("testout.txt");    
+    fout.write(65);    
+    fout.close();    
+    System.out.println("Successfully Completed"); 
+}
+catch(Exception e)
+{
+    System.out.println(e);
+}
 
-## Sourcecode.java:
-
-
-
+```
 
 
 
 
 ## OUTPUT:
 
+
+![image](https://github.com/user-attachments/assets/2b8ed683-9051-42a1-93e5-12e09623c4c6)
 
 
 ## RESULT:
