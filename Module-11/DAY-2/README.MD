@@ -22,21 +22,42 @@ To Create a java program to retrieve the key and value from hashtable for all in
  ```
 /*
 Program to implement a JAVA MAP & HASHMAP AND HASHTABLE using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Jayasree R
+RegisterNumber:  212223040074
 */
 ```
 
-## Sourcecode.java:
+```
 
-
-
+import java.util.*;  
+public class Mapp{  
+ public static void main(String args[]){ 
+     
+  Map<Integer,String> map=new Hashtable<>(); 
+  Scanner sc=new Scanner(System.in);
+  
+  int size=sc.nextInt();
+  for(int i=0;i<size;i++)
+  {
+  Integer a=sc.nextInt();
+  String b=sc.next();
+  map.put(a,b);  
+  } 
+ 
+  for(Map.Entry m:map.entrySet()){  
+   System.out.println(m.getKey()+" "+m.getValue());  
+  }  
+  boolean isEmpty = map.isEmpty(); System.out.println("Is HashMap is empty: " + isEmpty);
+ }  
+}  
+```
 
 
 
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/0ae7ae4a-0075-473b-8dd7-ea590f555f3b)
 
 
 ## RESULT:
